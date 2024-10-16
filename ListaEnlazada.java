@@ -119,7 +119,6 @@ public class ListaEnlazada<T> implements Secuencia<T> {
         this.longitud = 0;
         Nodo actual = lista.cabeza;   
         for (int i = 0; i < lista.longitud; i++) {
-            while(actual != null){
                 if(i == 0){    
                     Nodo copia = new Nodo(actual.dato);
                     copia.anterior = this.cabeza;
